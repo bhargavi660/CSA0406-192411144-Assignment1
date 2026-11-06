@@ -205,3 +205,23 @@ System calls have overhead because they involve switching between user mode and 
 3. Screenshot of `strace -c` results for buffer sizes 1, 512 and 4096.
 4. Screenshot of execution-time measurements.
 5. Comparison table containing the actual results.
+## Experimental Results
+
+The file-copy program was tested using three different buffer sizes with the `strace -c` command. The input file size was 10,000 bytes.
+
+| Buffer size | Read calls | Write calls |
+|---|---:|---:|
+| 1 byte | 10002 | 10001 |
+| 512 bytes | 22 | 21 |
+| 4096 bytes | 5 | 4 |
+
+### Observation
+
+- A smaller buffer size results in more read and write system calls.
+- Increasing the buffer size reduces the number of system calls.
+- Fewer system calls reduce the overhead involved in file copying.
+- A larger buffer size is generally more efficient for copying files.
+
+### Conclusion
+
+The experiment demonstrates that buffer size affects the cost of system calls. Using a larger buffer reduces the number of read and write operations and improves copying efficiency.
