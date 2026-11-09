@@ -19,7 +19,9 @@
 
 - **Compiler:** GCC
 
-- **GCC Version:** [Enter your GCC version]
+- **GCC Version:** [- 15.2.0]
+
+- - **Linux Distribution:** Ubuntu 26.04 LTS (WSL)
 
 - **Programming Language:** C
 
@@ -120,7 +122,7 @@ The assignment evaluates different operating-system concepts and their practical
 
 ## 6. Submission
 
-- **GitHub Repository:** [PASTE YOUR GITHUB REPOSITORY LINK HERE]
+- **GitHub Repository:** [https://github.com/bhargavi660/CSA0406-192411144-Assignment1]
 - **Assignment:** CSA04 – Assignment 1
 - **Total Marks:** 50
 
